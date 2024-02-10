@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.google.com/specimen/Outfit');
+    *{
+      font-family: 'Outfit' ;
+      box-sizing: border-box;
+
+    }
+    .card{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      height: 100vh;
+      background-color: hsl(212, 45%, 89%);
+
+    }
+    .content{
+      background: rgba(255,255,255,1);
+      -webkit-backdrop-filter: blur(50px);
+      backdrop-filter: blur(50px);
+      box-shadow: 2px 17px 31px #0000003d;
+      border-radius: 25px;
+      width: 350px;
+      height: 550px;
+    }
+    .content img{
+      border-radius: 30px;
+      padding: 20px 20px 10px 20px;
+      display: flex;
+      width: 100%;
+
+    }
+    .content p{
+      font-size:  15px;
+      font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    }
+    .content #p1{
+      font-weight: 800;
+      font-size: 20px;
+
+    }
+    .content :nth-child(3){
+      font-size: 15px;
+      font-weight: 400;
+      padding: 0 20px;
+      color: #00000079;
+
+    }
+
+    .attribution { 
+    bottom: 0;  
+    font-size: 11px; text-align: center; }
+    .attribution a {font-size: 11px; color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="content">
+      <a href="https://www.frontendmentor.io"><img src="images/image-qr-code.png" alt="Qr-Code"></a>
+      <p id="p1">Improve your front-end <br> skills by building projects</p>
+      <p>Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br> the next level</p>
+      <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Nour Wahbeh</a>.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
